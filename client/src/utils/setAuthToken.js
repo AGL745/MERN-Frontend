@@ -1,11 +1,22 @@
-import axios from "axios";
+import axios from "axios"
+
+
+//Authorization token
+
 const setAuthToken = token => {
   if (token) {
-    // Apply authorization token to every request if logged in
-    axios.defaults.headers.common["Authorization"] = token;
+
+    // Add authorization token to every request for logged in user
+
+    axios.defaults.headers.common["Authorization"] = token
+
   } else {
+
     // Delete auth header
-    delete axios.defaults.headers.common["Authorization"];
+    delete axios.defaults.headers.common["Authorization"]
+
   }
-};
-export default setAuthToken;
+  
+}
+
+export default setAuthToken

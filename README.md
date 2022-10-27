@@ -23,3 +23,13 @@ validator: Used to valid inputs (password, email format, etc.)
 //Dev dependency 
 -D flag
 Nodemon: Refreshes site automatically on safe 
+
+--React client based dependencies
+axios: HTTP client that uses promises to make request to the the backend
+classnames: provided conditional classes in JSX
+jwt-decode: Used to decode jwt to retrieve user data
+react-redux: All redux with react
+react-router-dom: Enables routing
+redux: Manages state between components
+redux-thunk: Middleware that allows asynchronous calls and access to the dispatch methods
+materialize: faster development component building 
